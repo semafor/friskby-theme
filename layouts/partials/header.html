@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "nb-no" }}">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         <nav>
             <ul>
-                {{ range .Site.Menus.main }}
+                {{ range .Site.Menus.custom }}
                 <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
